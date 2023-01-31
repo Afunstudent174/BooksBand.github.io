@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script> 
+        <script>
+            $(function() {
+                $('.faq-list-item').click(function() {
+                    var $answer=$(this).find('.answer');
+                   if ($answer.hasClass('open')) {
+                       $answer.removeClass('open');
+                       $answer.slideUp();
+                       $(this).find('span').text('+');
+                   }
+                    else { 
+                        $answer.addClass('open');
+                        $answer.slideDown();
+                        $(this).find('span').text('-');
+                    }
+                });
+            });
+                                                 
+        </script>
+        <style>
+        .faqbox {
+        background-color: lightblue; 
+        opacity: 0.8;
+        border: 1px solid black;
+        font-family: italic;
+        padding: 20px;
+        color: white; }
+            .answer {
+                display: none;
+                padding: 5px 0px;
+                margin-bottom: 15px; }
+            .faq-list-item {
+                position:relative;
+                margin: 10px;
+                border-bottom: 1px solid white;
+                cursor:pointer; }
+            .faq-list-item span {
+                position: absolute;
+                display: inline-block;
+                top: 5px;
+                right: 200px;
+                font-size: 20px; }
+            body { background-color: lightblue; }
+        </style>
+    </head>
+      <body>
+          <h1> FAQ </h1>
+          <ul>
+              <li class='faq-list-item'> <h2> What is the longest book in the world? </h2> <span> + </span>
+                  <div class='answer'> <p> The longest book in the world is The Blah Story. It is 7312 pages long. </p> </div> </li> 
+              <li class='faq-list-item'> <h2> Does BookBuddy have a mascot? </h2> <span> + </span>
+                  <div class ='answer'> <p> No, unfortunately BookBuddy does not have a mascot yet. </p> </div> </li>
+              <li class='faq-list-item'> <h2> What is a good book for a teen? </h2> <span> + </span>
+                  <div class='answer'> <p> One good book for teens is The Perks of Being a Wallflower. </p> </div> </li>
+              <li class='faq-list-item'> <h2> Is it possible to find out what is the book about without reading it? </h2> <span> + </span>  <div class='answer'> <p> Yes,  it is possible to find out what a book is about by reading the small paragraph on its back. ( A few books do not have them. ) </p> </div> </li>
+          
+          </ul>
+          <a href="homepage.html"> Home Page </a>
+                  
+    </body>
+</html>
