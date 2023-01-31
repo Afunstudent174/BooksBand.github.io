@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script> 
+        <script>
+            <!--To Define The Function which makes the image and text fade in and fade out.-->
+            $(function(){
+                    
+                $(".a1").fadeIn(4000).slideUp(1000).slideDown(1000);
+                $(".a2").fadeIn(4000).slideUp(1000).slideDown(1000);
+                $(".b1").fadeIn(4000).slideUp(1000).slideDown(1000);
+                $(".b2").fadeIn(4000).slideUp(1000).slideDown(1000);
+                $(".c1").fadeIn(4000).slideUp(1000).slideDown(1000);
+                $(".c2").fadeIn(4000).slideUp(1000).slideDown(1000);
+                $(".d1").fadeIn(4000).slideUp(1000).slideDown(1000);
+                $(".d2").fadeIn(4000).slideUp(1000).slideDown(1000);
+            });
+            $(document).ready(function() {
+                
+                alert("Welcome to the BookBuddy website!");
+            });
+      
+        </script>
+        <style>
+                   .move { border: 10px solid blue; height:100px; width:100px; background: lightblue; 
+            border-radius: 50%; position: absolute; animation: circleanimation 5s infinite; }
+        @keyframes circleanimation { 
+            0% { top: 3600px; left: 0px; background: red; }
+            100% { top: 3600px; left: 1000px; background:orange; }
+        }
+        
+            <!--To Define What The Div Classes and other parts of the website Look Like-->
+            .a1{display:block;}
+            .a2{display:none;}
+            .b1{display:block;}
+            .b2{display:none;}
+            .c1{display:block;}
+            .c2{display:none;}
+             .d1{display:block;}
+            .d2{display:none;}        
+            .header { background-color: lightblue; color: white; text-align: center; font-size: 45px;}
+            table,th, td { color: magneta; }
+            .middle { background-color:turquoise;}
+            .footer { background-color: pink; }
+            body { background-color:purple; }
+            
+            
+            
+        </style>
+    </head>
+      <body>
+          <div class="header">
+              <h1> Book Buddy </h1>
+              
+          </div>
+          <marquee>  <h3> New Releases </h3> </marquee>
+          
+          <!--Shows all the images-->
+          <table border=2>    <tr bgcolor="green"> <h1> <th> Books </th> <th> Summary </th> </h1></tr>
+<tr bgcolor="pink">
+ <td><p class="a1"> First Book Of Percy Jackson </p>
+          <img class="a1" src="percyjackson1.jpg" height="300px" width="300px"></td>
+<td> The Lightning Thief is a light-hearted fantasy about a modern 12-year-old boy who learns that his true father is Poseidon, the Greek god of the sea. Percy sets out to become a hero by undertaking a quest across the United States to find the entrance to the Underworld and stop a war between the gods. </td>
+</tr>
+<tr bgcolor="lightblue">
+<td>
+          <p class="a2"> Newest Book Of Percy Jackson </p>
+          <img class="a2" src="percyjackson2.jpg" height="300px" width="300px"> </td>
+<td> 
+It is the fifth and final installment in the Percy Jackson and the Olympians series. This conclusion to the saga revolves around Percy Jackson, the son of Poseidon, as he leads his friends in a last stand to protect Mount Olympus and the rest of the world from Kronos and his army of titans and monsters.</td> 
+</tr>
+<tr bgcolor="pink">
+<td>
+          <p class="b1"> First Book Of Geronimo Stilton </p>
+          <img class="b1" src="geronimostilton1.jpg" height="300px" width="300px"> </td>
+<td> 
+Stilton, Thea, cousin Trap and nephew Benjamin board a ship in search of buried treasure on a secret deserted island. The trip is filled with peril and plenty of humor, though the treasure isn't what anyone expected. </td>
+</tr>
+<tr bgcolor="lightblue">
+<td>
+          <p class="b2"> Newest Book Of Geronimo Stilton </p>
+          <img class="b2" src="geronimostilton2.jpg" height="300px" width="300px"> </td>
+<td> Its Christmas Eve in Sourisia! Everyone is absorbed in the final preparations for this great celebration. All, except Geronimo and Téa Stilton, remained at the office of the echo of the rodent to work. But two Santa Claus elves arrive to ask for their help! Let's go for a bewildering trip to the North Pole... where a bad surprise awaits them: the toy factory has closed and Santa Claus himself has gone on vacation... Quick, we have to save our minds of Christmas ! </td> 
+</tr>
+<tr bgcolor="pink">
+<td>
+                <p class="c1"> First Book Of The School For Good And Evil </p>
+          <img class="c1" src="schoolforgoodandevil1.jpg" height="300px" width="300px"> </td>
+<td> 
+The School for Good and Evil is a 2013 novel written by Soman Chainani. It is a tale in which best friends Sophie and Agatha are about to discover where all the lost children go: the fabled School for Good and Evil, where ordinary boys and girls are trained to be fairy-tale heroes and villains. </td>
+</tr>
+<tr bgcolor="lightblue">
+<td>
+          <p class="c2"> Newest Book Of The School For Good And Evil </p>
+          <img class="c2" src="schoolforgoodandevil2.jpg" height="300px" width="300px"> </td>
+<td>The final novel of The School for Good and Evil series and set after the events of A Crystal of Time, the book details Tedros', son of King Arthur, fight to become King of Camelot and prevent Japeth, who is impersonating his brother, from becoming the "One True King".</td>
+</tr>
+<tr bgcolor="pink">
+<td>
+          <p class="d1"> First Book Of Robert Langdon Series </p>
+          <img class="d1" src="danbrown1.jpg" height="300px" width="300px"> </td>
+<td> Dan Brown's "Angels and Demons” focuses on Robert Langdon, a symbologist and expert on a secret society called the Illuminati, who is asked to investigate the murder of a scientist, Leonardo Vetra. The murder seems to be connected to the Illuminati, but Langdon has his doubts.
+ </td>
+</tr>
+<tr bgcolor="lightblue">
+<td>
+          <p class="d2"> Newest Book Of Robert Langdon Series </p>
+          <img class="d2" src="danbrown2.jpg" height="300px" width="300px"> </td>
+<td> 
+Image result for inferno review book
+When a leather-clad assassin storms the hospital, Langdon is forced to flee with the beautiful doctor Sienna Brooks. Running from the assassin as well as the police, Langdon and Brooks are drawn into a devious plot that centers on one of the world's most mysterious literary masterpieces, Dante's Inferno. </td>
+</table>
+          <div class="middle"> 
+<h1> About Us </h1>
+
+              <p> Book Buddy is a website that holds over 3 books. It offers the information you will need to find the book, and will be very, very, useful.
+                  The buying page is filtered, so you can easily find a book that you would like to read. You can easily scroll throught a lot of books, and quickly find the perfect one for you. Please visit our<a href="BuyingInterface.html"> buying interface </a> or our <a href="faq.html"> FAQ </a> .  </p>
+          </div>
+          <div class="footer">
+              <h1> Links </h1>
+              <ul>
+                  <li>   <a href="https://www.powells.com/"> Powell's Books </a> </li>
+                  <li>   <a href="https://bookshop.org/"> Bookshop.org </a></li>
+                  <li> <a href="https://www.betterworldbooks.com/"> BetterWorld Books </a> </li>
+                  <li>  <a href="https://www.barnesandnoble.com/"> Barnes And Nobles Books </a> </li>
+                   <li>  <a href="BuyingInterface.html"> Buying Interface </a> </li>
+                                     <li>  <a href="faq.html"> FAQ </a> </li>
+              </ul>
+          </div>
+          <div class="move"> <h2> Bestsellers </h2> </div>
+          
+          
+          
+          
+    </body>
+</html>
